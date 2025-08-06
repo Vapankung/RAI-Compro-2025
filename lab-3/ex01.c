@@ -11,6 +11,6 @@ int main(){
         printf("Match\n");
     }
     else{
-        printf("Not match\n");
+        printf("Does not match, Try again\n");
     }
 }
