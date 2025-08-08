@@ -3,11 +3,37 @@ int main(){
     int num1, num2, result, menu;
     printf("Enter Num1 : ");
     scanf("%d", &num1);
+
     printf("Enter Num2 : ");
     scanf("%d", &num2);
-    printf("Calculator Menu : \n 1. +\n 2. -\n 3. *\n 4. /\n 5. %");
+
+    printf("Calculator Menu : \n 1. +\n 2. -\n 3. *\n 4. /\n 5. %%");
     printf("Choose menu: ");
     scanf("%d", &menu);
+
+    switch(menu){
+        case 1 :
+            result = num1 + num2;
+            printf("Ans : %d + %d = %d", num1,num2,result);
+            break;
+        case 2 :
+            result = num1 - num2;
+            printf("Ans : %d - %d = %d", num1,num2,result);
+            break;
+        case 3 :
+            result = num1*num2;
+            printf("Ans : %d * %d = %d", num1,num2,result);
+            break;
+        case 4 :
+            result = num1/num2;
+            printf("Ans : %d / %d = %d", num1,num2,result);
+            break;
+        case 5 :
+            result = num1%num2;
+            printf("Ans : %d %% %d = %d", num1,num2,result);
+            break;
+    }
+    
     
     switch(menu){
         case 1 :
