@@ -1,5 +1,3 @@
-
-
 int val = 0;  
 
 void setup() {
